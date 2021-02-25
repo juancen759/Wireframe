@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables//
+//Colores
+$primer-color: #e4109c;
+$segundo-color: black;
+$tercer-color:#fff;
+//Fuentes
+$font-primary: 'Noto Sans JP',
+sans-serif;
+$segunda-fuente: 'Montserrat',
+sans-serif;
+//HERENCIAS//////////////////
+@import 'herencias';
+body {
+    perspective: 900px;
+    .ContainerHeader {
+        width: 90%;
+        margin: 0 auto;
+        height: 550px;
+        nav {
+            display: flex;
+            width: 85%;
+            height: 40px;
+            margin: 20px auto;
+            .logo {
+                @include Logotipo;
+            }
+            .BarraNavegacion {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 15px;
+                font-family: 'Noto Sans JP', sans-serif;
+                text-align: center;
+                font-weight: bolder;
+                .Item {
+                    flex-basis: calc(100% / 3);
+                    height: 100%;
+                    padding-top: 12px;
+                    &:hover {
+                        background-color: $segundo-color;
+                        opacity: 0.8;
+                        transition: 1s;
+                        border-radius: 30px;
+                        border: solid 5px $primer-color;
+                        cursor: pointer;
+                        color: white;
+                        font-size: 17px;
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+        //Fin Barra Navegacion//
+        //Inicio Cuerpo Header-cabezera//
+        .CuerpoHeader {
+            height: 469px;
+            display: flex;
+            text-align: justify;
+            .Box-1 {
+                width: 50%;
+                padding: 90px;
+                h2 {
+                    @include Titulo;
+                    padding-bottom: 35px;
+                    padding-right: 130px;
+                    text-align: justify;
+                }
+                p {
+                    font-family: $font-primary;
+                    font-size: 16px;
+                    opacity: 0.5;
+                }
+                .Botones {
+                    line-height: 100px;
+                    .B-1 {
+                        @include Button;
+                        &:hover {
+                            background-color: $tercer-color;
+                            color: $segundo-color;
+                            cursor: pointer;
+                            transition: 1s;
+                        }
+                    }
+                    .B-2 {
+                        @include Button;
+                        background-color: $tercer-color;
+                        color: $segundo-color;
+                        &:hover {
+                            background-color: $primer-color;
+                            color: $segundo-color;
+                            cursor: pointer;
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+            .Box-2 {
+                width: 35%;
+                border-radius: 50%;
+                border: solid 5px $segundo-color;
+                opacity: 0.7;
+                height: 85%;
+                font-size: 250px;
+                color: $primer-color;
+                background: linear-gradient(to right, #c33764, #1d2671);
+                display: flex;
+                align-items: center;
+                align-self: center;
+                margin: 0 auto;
+                span {
+                    margin: 0 auto;
+                    color: $tercer-color;
+                    &:hover {
+                        transform: rotateY(180deg);
+                        transition: 2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////MAAAIIINNN////////
+.main {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    .Parrafo {
+        text-align: center;
+        font-family: $segunda-fuente;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 7%;
+        line-height: 25px;
+    }
+    .Our-Advan {
+        text-align: center;
+        h2 {
+            @include Titulo;
+            padding-top: 30px;
+        }
+        p {
+            font-family: $font-primary;
+            font-size: 15px;
+            opacity: 0.6;
+            padding-top: 5px;
+        }
+    }
+    .beneficios {
+        display: flex;
+        padding: 4%;
+        justify-content: space-around;
+        .beneficio-1 {
+            @include boxes;
+            @include Titulo;
+            font-size: 17px;
+        }
+        .beneficio-2 {
+            @include boxes;
+            @include Titulo;
+            font-size: 17px;
+        }
+        .beneficio-3 {
+            @include boxes;
+            @include Titulo;
+            font-size: 17px;
+        }
+    }
+    .HowWeWork {
+        h2 {
+            @include Titulo;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            text-align: center;
+            margin-top: 5px;
+            font-family: $font-primary;
+            font-size: 15px;
+            opacity: 0.6;
+        }
+        .number-box {
+            display: flex;
+            width: 80%;
+            height: 200px;
+            margin: 50px auto;
+            .box {
+                width: 30%;
+                height: auto;
+                font-family: $segunda-fuente;
+                text-align: center;
+                padding-top: 30px;
+                span {
+                    width: 55px;
+                    height: 55px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: $primer-color;
+                    opacity: 0.6;
+                    border: solid 2px $segundo-color;
+                }
+                h4 {
+                    line-height: 80px;
+                }
+            }
+        }
+    }
+    .Our-Clients {
+        margin-top: 20px;
+        @include Titulo;
+        h4 {
+            font-size: 30px;
+        }
+        p {
+            font-family: $font-primary;
+            font-size: 15px;
+        }
+        .Clients {
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+            .imagenes-clients {
+                width: 35%;
+                height: 110px;
+                padding-left: 10px;
+                margin-top: 60px;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    border: solid 3px $primer-color;
+                }
+            }
+        }
+    }
+}
+
+/////Fin Maiin///
+//// Footer////
+.Contact-Us {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 120px;
+    .Info-contact {
+        padding: 40px;
+        display: grid;
+        grid-template-rows: 130px 200px 150px;
+        .titulo {
+            padding-top: 60px;
+            h3 {
+                @include Titulo;
+                font-size: 24px;
+                text-align: justify;
+            }
+        }
+        .Contact-Box {
+            display: flex;
+            height: 200px;
+            font-family: $font-primary;
+            font-size: 15px;
+            .Info-1 {
+                display: grid;
+                grid-template-rows: repeat(4, 50px);
+                margin-right: 40px;
+                width: 50%;
+                text-align: justify;
+                .Font {
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        border: solid 1px black;
+                        border-radius: 50%;
+                        background-color: gray;
+                        opacity: 0.5;
+                        text-align: center;
+                        padding-top: 7px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .Redes-sociales {
+            padding-top: 50px;
+            font-size: 25px;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+    .Imagen {
+        padding-left: 55px;
+        img {
+            width: 550px;
+            height: 550px;
+        }
+    }
+    .logoTipo {
+        font-size: 55px;
+        color: $primer-color;
+        text-align: center;
+        margin: 0 auto;
+        width: 200%;
+        p {
+            font-size: 13px;
+            color: $segundo-color;
+            opacity: 0.4;
+        }
+    }
+}

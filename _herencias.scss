@@ -1,0 +1,43 @@
+@mixin Button {
+    width: 130px;
+    height: 40px;
+    background-color: $segundo-color;
+    color: $tercer-color;
+    border: solid 4px $primer-color;
+    border-radius: 40px;
+    margin-right: 10px;
+    font-family: $segunda-fuente;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@mixin Titulo {
+    font-family: $segunda-fuente;
+    font-size: 27px;
+    text-align: center;
+}
+
+@mixin boxes {
+    width: 30%;
+    padding: 2.5%;
+    span {
+        font-size: 40px;
+        color: $primer-color;
+        i {
+            margin-bottom: 25px;
+        }
+    }
+    p {
+        padding-top: 20px;
+    }
+}
+
+@mixin Logotipo {
+    width: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    span {
+        color: $primer-color;
+    }
+}

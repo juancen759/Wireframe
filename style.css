@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-perspective: 900px;
+          perspective: 900px;
+}
+
+body .ContainerHeader {
+  width: 90%;
+  margin: 0 auto;
+  height: 550px;
+}
+
+body .ContainerHeader nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 40px;
+  margin: 20px auto;
+}
+
+body .ContainerHeader nav .logo {
+  width: 50%;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .ContainerHeader nav .logo span {
+  color: #e4109c;
+}
+
+body .ContainerHeader nav .BarraNavegacion {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body .ContainerHeader nav .BarraNavegacion .Item {
+  -ms-flex-preferred-size: calc(100% / 3);
+      flex-basis: calc(100% / 3);
+  height: 100%;
+  padding-top: 12px;
+}
+
+body .ContainerHeader nav .BarraNavegacion .Item:hover {
+  background-color: black;
+  opacity: 0.8;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 30px;
+  border: solid 5px #e4109c;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  padding-top: 0px;
+}
+
+body .ContainerHeader .CuerpoHeader {
+  height: 469px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 {
+  width: 50%;
+  padding: 90px;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  padding-bottom: 35px;
+  padding-right: 130px;
+  text-align: justify;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 .Botones {
+  line-height: 100px;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 .Botones .B-1 {
+  width: 130px;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  border: solid 4px #e4109c;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 .Botones .B-1:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 .Botones .B-2 {
+  width: 130px;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  border: solid 4px #e4109c;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fff;
+  color: black;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-1 .Botones .B-2:hover {
+  background-color: #e4109c;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-2 {
+  width: 35%;
+  border-radius: 50%;
+  border: solid 5px black;
+  opacity: 0.7;
+  height: 85%;
+  font-size: 250px;
+  color: #e4109c;
+  background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
+  background: linear-gradient(to right, #c33764, #1d2671);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 auto;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-2 span {
+  margin: 0 auto;
+  color: #fff;
+}
+
+body .ContainerHeader .CuerpoHeader .Box-2 span:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.main .Parrafo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 7%;
+  line-height: 25px;
+}
+
+.main .Our-Advan {
+  text-align: center;
+}
+
+.main .Our-Advan h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.main .Our-Advan p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  opacity: 0.6;
+  padding-top: 5px;
+}
+
+.main .beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .beneficios .beneficio-1 {
+  width: 30%;
+  padding: 2.5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.main .beneficios .beneficio-1 span {
+  font-size: 40px;
+  color: #e4109c;
+}
+
+.main .beneficios .beneficio-1 span i {
+  margin-bottom: 25px;
+}
+
+.main .beneficios .beneficio-1 p {
+  padding-top: 20px;
+}
+
+.main .beneficios .beneficio-2 {
+  width: 30%;
+  padding: 2.5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.main .beneficios .beneficio-2 span {
+  font-size: 40px;
+  color: #e4109c;
+}
+
+.main .beneficios .beneficio-2 span i {
+  margin-bottom: 25px;
+}
+
+.main .beneficios .beneficio-2 p {
+  padding-top: 20px;
+}
+
+.main .beneficios .beneficio-3 {
+  width: 30%;
+  padding: 2.5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.main .beneficios .beneficio-3 span {
+  font-size: 40px;
+  color: #e4109c;
+}
+
+.main .beneficios .beneficio-3 span i {
+  margin-bottom: 25px;
+}
+
+.main .beneficios .beneficio-3 p {
+  padding-top: 20px;
+}
+
+.main .HowWeWork h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main .HowWeWork p {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.main .HowWeWork .number-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.main .HowWeWork .number-box .box {
+  width: 30%;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.main .HowWeWork .number-box .box span {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e4109c;
+  opacity: 0.6;
+  border: solid 2px black;
+}
+
+.main .HowWeWork .number-box .box h4 {
+  line-height: 80px;
+}
+
+.main .Our-Clients {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+}
+
+.main .Our-Clients h4 {
+  font-size: 30px;
+}
+
+.main .Our-Clients p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+}
+
+.main .Our-Clients .Clients {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.main .Our-Clients .Clients .imagenes-clients {
+  width: 35%;
+  height: 110px;
+  padding-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.main .Our-Clients .Clients .imagenes-clients img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 3px #e4109c;
+}
+
+.Contact-Us {
+  margin: 0 auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 120px;
+      grid-template-rows: 1fr 120px;
+}
+
+.Contact-Us .Info-contact {
+  padding: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 130px 200px 150px;
+      grid-template-rows: 130px 200px 150px;
+}
+
+.Contact-Us .Info-contact .titulo {
+  padding-top: 60px;
+}
+
+.Contact-Us .Info-contact .titulo h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  font-size: 24px;
+  text-align: justify;
+}
+
+.Contact-Us .Info-contact .Contact-Box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+}
+
+.Contact-Us .Info-contact .Contact-Box .Info-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (50px)[4];
+      grid-template-rows: repeat(4, 50px);
+  margin-right: 40px;
+  width: 50%;
+  text-align: justify;
+}
+
+.Contact-Us .Info-contact .Contact-Box .Info-1 .Font i {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.5;
+  text-align: center;
+  padding-top: 7px;
+  margin-right: 10px;
+}
+
+.Contact-Us .Info-contact .Redes-sociales {
+  padding-top: 50px;
+  font-size: 25px;
+}
+
+.Contact-Us .Info-contact .Redes-sociales i {
+  margin-right: 10px;
+}
+
+.Contact-Us .Imagen {
+  padding-left: 55px;
+}
+
+.Contact-Us .Imagen img {
+  width: 550px;
+  height: 550px;
+}
+
+.Contact-Us .logoTipo {
+  font-size: 55px;
+  color: #e4109c;
+  text-align: center;
+  margin: 0 auto;
+  width: 200%;
+}
+
+.Contact-Us .logoTipo p {
+  font-size: 13px;
+  color: black;
+  opacity: 0.4;
+}
+/*# sourceMappingURL=style.css.map */
